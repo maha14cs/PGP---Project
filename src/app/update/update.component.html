@@ -1,0 +1,28 @@
+<p>update works!</p>
+
+<table>
+    <tr>
+        <td>Fact ID</td>
+        <td>{{fact.factId}}</td>
+      </tr>
+  <tr>
+      <td>FactName</td>
+      <td><input [(ngModel)]="fact.fname"/></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input [(ngModel)]="fact.email"/></td>
+</tr>
+  <tr>
+      <td>Phone</td>
+      <td><input [(ngModel)]="fact.phone"/></td>
+  </tr>
+  
+    <tr>
+        <td><button (click)="save()">Update</button></td>
+    </tr>
+</table>
+
+          
+
+            

@@ -1,0 +1,39 @@
+<p>search works!</p>
+<div class="form-group">
+
+        <div class="form-group">
+                <label class="col-md-4">FactID</label>
+                <input type="text" class="form-control" 
+                #factId onfocus="this.value=''"/>
+              </div>
+              <br>
+              <div class="form-group">
+                <button (click) = "getFactById()" type="submit" class="btn btn-primary" >
+                  Reterive
+                </button>
+              </div>
+</div>
+    <br>
+<table class="table table-hover">
+        <thead>
+        <tr>
+            <td>UserID</td>
+            <td>FactName</td>
+            <td>Email</td>
+            <td>Phone</td>
+        </tr>
+        </thead>
+      
+        <tbody>
+                <tr *ngFor="let emp of facts">
+                        <p *ngIf="emp.factId==factId.value">
+                        <td>{{ emp.factId }}</td>
+                        <td>{{ emp.fname }}</td>
+                        <td>{{ emp.phone }}</td>
+                        <td>{{ emp.email }}</td>
+                                              
+                        </p>
+                </tr>
+        </tbody>
+
+

@@ -1,0 +1,24 @@
+<p>display works!</p>
+<table class="table table-hover">
+        <thead>
+        <tr>
+            <td>FactID</td>
+            <td>FactName</td>
+            <td>Email</td>
+            <td>Phone</td>
+           
+                        
+        </tr>
+        </thead>
+      
+        <tbody>
+                <tr *ngFor="let emp of facts">
+                        <td>{{ emp.factId }}</td>
+                        <td>{{ emp.fname }}</td>
+                        <td>{{ emp.phone }}</td>
+                        <td>{{ emp.email }}</td>
+                       <td><button routerLink="/update/{{emp.factId}}">Edit</button></td>
+                        <td><button (click)="deleteEmp(emp.fact)">Delete</button></td>
+                </tr>
+        </tbody>
+

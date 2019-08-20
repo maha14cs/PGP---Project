@@ -1,0 +1,25 @@
+
+    <h2>Faculty Insertion</h2>
+    <table>
+      <tr>
+        <td>FactId</td>
+        <td><input #factId onfocus="this.value=''" required></td>
+      </tr>
+      <tr>
+          <td>FactName</td>
+          <td><input #fname onfocus="this.value=''" required></td>
+      </tr>
+
+      <tr>
+          <td>Email</td>
+          <td><input #email onfocus="this.value=''" required></td>
+        <tr>
+            <td>Phone</td>
+            <td><input #phone onfocus="this.value=''" required></td>
+        </tr>
+    </table>
+    <br>
+    <button (click)="add(factId.value,fname.value,phone.value,email.value);">
+        Create
+    </button>
+
